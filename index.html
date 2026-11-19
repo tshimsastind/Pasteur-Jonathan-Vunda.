@@ -1,1 +1,111 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Pasteur Jonathan Vunda – Église Injeel, Goma</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,500;6..72,700&family=Instrument+Sans:wght@400;600&display=swap">
+<style>
+:root{
+  --bg:#F6F5F1; --surface:#FFFFFF; --ink:#0F1B30; --muted:#5A6577; --line:#D9D6CC;
+  --blue:#1F4FA8; --gold:#9A7414; --hero:#12203A; --hero-ink:#F6F5F1;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+  color-scheme:light;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#0C1527; --surface:#14213A; --ink:#EEEDE8; --muted:#A3ADBF; --line:#27364F;
+    --blue:#7FA6F0; --gold:#D6B25A; --hero:#0A1222; --hero-ink:#F6F5F1; color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0C1527; --surface:#14213A; --ink:#EEEDE8; --muted:#A3ADBF; --line:#27364F;
+  --blue:#7FA6F0; --gold:#D6B25A; --hero:#0A1222; --hero-ink:#F6F5F1; color-scheme:dark;
+}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:inherit}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.6 "Instrument Sans",system-ui,sans-serif}
+h1,h2,h3{font-family:"Newsreader",Georgia,serif;line-height:1.15;margin:0}
+a{color:inherit}
+.wrap{max-width:760px;margin:0 auto;padding:0 22px}
+a:focus-visible,button:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
 
+.hero{background:var(--hero);color:var(--hero-ink);padding:64px 0 56px}
+.hero p.role{margin:0 0 18px;color:#C9D4EA;font-size:16px}
+.hero h1{font-size:clamp(46px,13vw,84px);font-weight:700;letter-spacing:-.02em}
+.hero .verse{margin:26px 0 30px;font-family:"Newsreader",Georgia,serif;font-size:21px;line-height:1.45;max-width:30ch;color:#E6D3A0}
+.btns{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-block;padding:13px 22px;border-radius:999px;font-weight:600;text-decoration:none;border:2px solid #E6D3A0}
+.btn.main{background:#E6D3A0;color:#12203A}
+.btn.alt{color:#F6F5F1}
+
+section{padding:52px 0 8px}
+h2{font-size:32px;margin-bottom:8px}
+.lead{color:var(--muted);margin:0 0 26px;max-width:52ch}
+
+.acts{list-style:none;margin:0;padding:0}
+.acts li{display:grid;grid-template-columns:4px 1fr;gap:18px;padding:20px 0;border-top:1px solid var(--line)}
+.acts li:last-child{border-bottom:1px solid var(--line)}
+.acts li::before{content:"";background:var(--gold);border-radius:2px}
+.acts h3{font-size:23px;margin-bottom:4px}
+.acts p{margin:0;color:var(--muted)}
+.acts a{display:inline-block;margin-top:8px;color:var(--blue);font-weight:600}
+
+.when{display:flex;gap:18px;align-items:baseline;padding:16px 0;border-top:1px solid var(--line)}
+.when b{min-width:96px;color:var(--gold);font-family:"Newsreader",Georgia,serif;font-size:20px}
+.when span{color:var(--muted)}
+.note{font-size:14px;color:var(--muted);margin-top:14px}
+
+.contact{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:26px;margin-top:6px}
+.contact p{margin:0 0 6px}
+footer{padding:44px 0 36px;color:var(--muted);font-size:14px}
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="wrap">
+    <p class="role">Pasteur · Église Injeel · Goma</p>
+    <h1>Jonathan Vunda</h1>
+    <p class="verse">« Ta parole est une lampe à mes pieds. »</p>
+    <div class="btns">
+      <a class="btn main" href="#activites">Ses activités</a>
+      <a class="btn alt" href="#contact">Le contacter</a>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+  <section id="activites">
+    <h2>Ses activités</h2>
+    <p class="lead">Tout ce que le pasteur Jonathan Vunda fait, en un seul endroit.</p>
+    <ul class="acts">
+      <li><div><h3>Ministère à l’Église Injeel</h3><p>Cultes, enseignement et accompagnement de la communauté à Goma.</p></div></li>
+      <li><div><h3>Prédications</h3><p>Messages en vidéo et en audio, à regarder ou écouter quand vous voulez.</p><a href="https://www.facebook.com/share/1Mzu5cqTDC/">Voir sur Facebook</a></div></li>
+      <li><div><h3>Conférences et événements</h3><p>Veillées, séminaires et rencontres ouvertes à tous.</p><a href="#agenda">Voir l’agenda</a></div></li>
+      <li><div><h3>Création digitale</h3><p>Contenus et projets en ligne au service de la parole.</p></div></li>
+    </ul>
+  </section>
+
+  <section id="agenda">
+    <h2>Agenda</h2>
+    <p class="lead">Les prochains rendez-vous avec le pasteur.</p>
+    <div class="when"><b>Dimanche</b><span>Culte à l’Église Injeel, Goma — horaire à confirmer</span></div>
+    <div class="when"><b>À venir</b><span>Prochaine conférence — date et lieu à confirmer</span></div>
+    <p class="note">Les horaires sont des exemples à remplacer par les vrais.</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p class="lead">Une question, une invitation, une demande de prière ?</p>
+    <div class="contact">
+      <p><strong>Église Injeel</strong>, Goma</p>
+      <p>WhatsApp : à ajouter</p>
+      <p><a href="https://www.facebook.com/share/1Mzu5cqTDC/">Écrire sur Facebook</a></p>
+    </div>
+  </section>
+</main>
+
+<footer><div class="wrap">© Pasteur Jonathan Vunda</div></footer>
+</body>
+</html>
